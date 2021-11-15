@@ -1,0 +1,16 @@
+.productos-contenido.contenido
+    each producto in productos 
+        .contenido-target
+            img(src=`/img/productosPinatas/${producto.imagen}.webp` alt=`${producto.imagen}`)
+
+            .info-target 
+                h1= producto.nombre
+                p.ahora Ahora: #{producto.precio_ahora} MXN 
+                P.antes Antes: #{producto.precio_antes} MXN
+                    
+                .disponible 
+                    img(src="/img/imagesContent/icons8-de-acuerdo.svg", alt="icono de disponible")
+                    p= producto.stock
+                    
+                .ver-mas
+                    a(href=`/productos${producto.slug}`) Ver mas    

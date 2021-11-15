@@ -1,0 +1,60 @@
+.contenido-nosotros{
+    margin-top: 4rem;
+    gap: 2rem;
+    text-align: start;
+
+    p{
+        font-size: 2rem;
+        color: rgb(43, 40, 40);
+        line-height: 2.5rem;
+        text-transform: initial;
+    }
+
+    @include desktop{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.contenido-ruta{
+
+    margin-top: 6rem;
+
+    h1{
+        font-size: $grande;
+        color:rgb(43, 40, 40);
+    }
+
+    .contenedor-imagen{
+        background-image: url(../img/imagesContent/rutaImagen.png);
+        width: 100%;
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+
+
+        .contain{
+      
+            background-color: rgba(95, 94, 94, 0.5);
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            margin-top: 0;
+        }
+
+        p{
+            position: absolute;
+            top: 30%;
+
+            font-size: 1.5rem;
+
+            @include tablet{
+                font-size: $grande;
+            }
+        }
+    }
+}
+

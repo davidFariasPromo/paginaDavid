@@ -1,0 +1,71 @@
+.target-producto{
+    display: flex;
+    margin-top: 5rem;
+    gap: 4rem;
+    flex-direction: column;
+
+    @include tablet{
+        flex-direction: row;
+    }
+
+    .div-imagen{
+        img{
+
+            @include desktop{
+                width: 50rem;
+            }
+        }
+    
+    }
+
+
+    .div-informacion{
+  
+        padding: 1.5rem;
+        h1{
+            color: rgb(61, 58, 58);
+            font-size: 4rem;
+        }
+        p{
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+    }
+    .div-informacion-producto{
+        
+        p{
+            margin-top: 3rem;
+            color:rgb(61, 58, 58);
+            line-height: 3rem;
+        }
+        h1{
+            font-size: 2.5rem;
+
+        }
+        .contact{
+            margin-top: 4rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: $purpura;
+        }
+    }
+    
+}
+
+.disponible-icon{
+    display: flex;
+    gap: 2rem;
+
+    img{
+        width: 3rem;
+        
+    }
+    p{
+        color:rgb(61, 58, 58);
+    }
+}
+

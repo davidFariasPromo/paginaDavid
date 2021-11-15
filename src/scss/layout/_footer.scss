@@ -1,0 +1,40 @@
+.footer-contenido{
+    h1{
+        text-align: center;
+        padding-top: 4rem;
+        text-transform: uppercase;
+    }
+
+    .navegacion-footer{
+        padding: 3rem 0;
+    }
+
+    .redes-sociales{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+
+
+        img{
+            max-width: 3rem;
+            margin-right: 2rem;
+            filter: invert(100%);
+            transition: all .3s;
+
+            &:hover{
+               filter: invert(60%);
+            }
+
+            
+        }
+    }
+
+    .leyenda{
+        padding-bottom: 3rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+.nav-footer{
+    display: block;
+}

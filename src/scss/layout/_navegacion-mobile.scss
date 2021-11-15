@@ -1,0 +1,47 @@
+.navegacion-mobile .nav-mobile{
+    display: none;
+}
+
+.navegacion-mobile:hover .nav-mobile{
+    display: block;
+    position: absolute;
+    max-width: 20rem;
+    right: 7px;
+    top: 80px;
+    background: linear-gradient(to bottom, $verdeLima, $purpura);
+    height: auto;
+    z-index: +7;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 14px 14px 13px rgba(0,0,0,0.12), 0 14px 14px 7px rgba(126, 58, 58, 0.3);
+
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+
+        a{
+            font-size: 2rem;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            margin-right: 0;
+        }
+    }
+}
+
+.navegacion-header .nav-footer{
+    display: block;
+    text-align: center;
+
+    a{
+        font-size: 1.2rem;
+
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+
+}

@@ -1,0 +1,58 @@
+.home {
+    position: relative;
+}
+
+.home .contenido-header{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: +6;
+
+}
+.cortina{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    min-height: 600px;
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.slider{
+    background-image: url(../img/imagesContent/hero.webp);
+    min-height: 600px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+
+
+    h1{
+        z-index: +3;
+        font-size: 4rem;
+
+
+        @include tablet{
+            font-size: 6rem;
+        }
+    }
+
+    em{
+        font-size: 2rem;
+        font-family: $fuente-principal;
+        font-weight: bold;
+
+        @include tablet{
+            font-size: 3rem;
+        }
+    }
+
+}
+

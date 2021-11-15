@@ -1,0 +1,101 @@
+.testimoniales{
+    margin-top: 4rem;
+
+    h1{
+        font-size: 2rem;
+        color: rgb(61, 58, 58);
+    
+    }
+
+
+    .formulario{
+        max-width: 60rem;
+        margin: 3rem auto;
+        background: linear-gradient(to bottom, rgb(60, 145, 60), $verdeLima);
+        padding: 2rem;
+        border-radius: .5rem;
+        color: white;
+
+        .inputs-form{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+
+            label{
+                text-align: start;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+            input{
+                font-size: 2rem;
+                padding: .5rem;
+            }
+        }
+
+        .btn-enviar{
+            font-size: 2.5rem;
+            padding: .5rem 3rem;
+            background: rgb(60, 145, 60);
+            border: none;
+            color: white;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    #mensaje{
+        height: 15rem;
+        font-size: 1.5rem;
+    }
+
+    p{
+        color: white;
+    }
+}
+
+.div-testimonio-criticas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+
+
+    @include tablet{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    
+    p{
+        font-size: 1.5rem;
+        
+
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+    .footer-testimonio{
+        font-size: 1.5rem;
+    }
+
+    p,.footer-testimonio{
+        color:rgb(61, 58, 58);
+    }
+
+}
+
+.cards{
+    border: 2px solid $verdeLima;
+    padding: 2rem .5rem;
+
+    @include tablet{
+        padding: 2rem 3rem;
+    }
+   
+}
+
+.testimoniales-inicio{
+    margin: 4rem auto;
+}

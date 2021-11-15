@@ -1,0 +1,30 @@
+extends ./layout/index
+
+
+block contenido
+    .contenido.target-producto
+        .div-imagen 
+            img(src=`/img/productosPinatas/${resultado.imagen}.webp`)
+        .div-contenido 
+            .div-informacion
+                h1=resultado.nombre
+                
+                .div-precios.info-target
+                    p.ahora Precio ahora: #{resultado.precio_ahora} MXN
+                    p.antes Precio antes: #{resultado.precio_antes} MXN
+
+                    .disponible-icon
+                        img(src="/img/imagesContent/icons8-de-acuerdo.svg", alt="icono de disponible")
+                        p= resultado.stock
+
+                    .div-informacion-producto     
+                        p= resultado.descripcion
+
+                        h1.contact Si el producto fue de tu agrado contactanos por WhatsApp al 
+                            a(href="2283543513") 2283543513
+                        h1 O a nuestra cuenta de Facebook 
+                            a(href="https://www.facebook.com/Pi%C3%B1atas-chidas-115320626536858") Piñatas Chidas
+                
+
+
+    

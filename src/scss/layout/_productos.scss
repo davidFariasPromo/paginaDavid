@@ -1,0 +1,85 @@
+.productos-contenido{
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include tablet{
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include desktop{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+
+    .contenido-target{
+        background-color: rgb(230, 221, 221);
+        border-radius: .5rem;
+        height: auto;
+    }
+
+    p{
+        color:rgb(43, 40, 40);
+    }
+
+    img{
+        height: 25rem;
+        object-fit: cover;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+    
+}
+
+.info-target{
+    padding: 1rem;
+    h1{
+        color:rgb(43, 40, 40);
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.7rem;
+        font-weight: 800;
+    }
+    .ahora{
+        color: rgb(15, 136, 15);
+    }
+    .antes{
+        color: rgb(192, 29, 29);
+        
+    }
+
+    
+}
+.disponible{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+.ver-mas{
+
+    margin-top: 2rem;
+    background-color: $verdeLima;
+    padding: .5rem 0;
+    transition: all .3s;
+
+    a{  
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+
+    &:hover{
+        background-color: rgb(26, 97, 26) ;
+    }
+}

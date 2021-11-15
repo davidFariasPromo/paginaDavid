@@ -1,0 +1,38 @@
+extends ./layout/index
+
+
+
+block contenido 
+    h1.titulo-head.contenido=pagina
+        
+        include ./layout/testimoniosParte
+
+        .div-testimonios.contenido 
+            if(errores)
+                each error in errores   
+                    p= error.mensaje
+        
+        
+            
+
+        .testimoniales 
+            h1 Agrega un testimonial escribiendo tu experiencia 
+            
+            form(action="/testimoniales" method="POST" class="formulario")
+                .inputs-form 
+                    label(for="nombre" class="legend") Nombre: 
+                    input(type="text" id="nombre" placeholder="David" name="nombre" value=nombre) 
+            
+                .inputs-form 
+                    label(for="apellido" class="legend") Apellido: 
+                    input(type="text" id="apellido" name="apellido" placeholder="Promontor Farias" value=apellido) 
+                .inputs-form 
+                    label(for="email" class="legend") Correo electronico: 
+                    input(type="email" id="email" name="correo" placeholder="davidMicorreo@gmail.com" value=email) 
+                .inputs-form 
+                    label(for="telefono" class="nombre") Telefono: 
+                    input(type="number" id="telefono" name="telefono" placeholder="0000000000" value=telefono) 
+                .inputs-form 
+                    label(for="mensaje") Mensaje 
+                    textarea(name="mensaje", id="mensaje" cols="30", rows="10")
+                input(type="submit" class="btn-enviar" value="Añadir")

@@ -1,0 +1,43 @@
+extends ./layout/index
+
+
+block slider
+    .slider 
+        h1 Piñatas Chidas
+        em Un toque de color a ese evento especial
+        .cortina
+    .div-ofrecer.contenido  
+        .cards-informacion 
+            .div-imagen
+                img(src="/img/imagesContent/precios-bajos.png")
+            h2 Precios Bajos
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloribus rerum assumenda quis harum, est animi accusantium amet id.
+        .cards-informacion
+            .div-imagen 
+                img(src="/img/imagesContent/garantia.png")
+            h2 Calidad
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptate. Incidunt assumenda quis harum, est animi accusantium amet id.
+        .cards-informacion
+            .div-imagen 
+                img(src="/img/imagesContent/icono-design.png")
+            h2 Buenos Diseños
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quam ipsum! A in eius assumenda quis harum, est animi accusantium amet id.
+    
+    .descuento-target 
+        h1 Se acercan las posadas, aprovecha las grandes ofertas que tendremos para ti.
+        p Solo en piñatas chidas
+
+        .cortina.cortina2
+    
+    .muestra-productos 
+        h1.titulo-head Productos
+        include ./layout/productosAux
+
+
+
+
+
+    .testimoniales.testimoniales-inicio
+        h1.titulo-head Testimoniales
+
+        include ./layout/testimoniosParte

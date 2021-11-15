@@ -1,0 +1,99 @@
+.contenido-header, .footer{
+    background-color: $verdeLima ;
+    height: auto;
+
+
+    .logo-header{
+        
+
+        p{
+            font-size: 1.5rem;
+            color:  $verdeLima;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 2px solid $verdeLima;
+            background-color: white;
+            padding: .5rem .5rem;
+
+            @include tablet{
+                font-size: 2rem;
+                padding: .8rem 1.5rem;
+            }
+        }
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.navegacion-header{
+    
+    nav{
+        display: none;
+
+        @include tablet{
+            display: block;
+        }
+ 
+        
+    }
+
+}
+.nav{
+
+        color: black;
+        font-weight: bold;
+        margin-right: 2rem;
+        font-size: 1.7rem;
+        color: white;
+        text-transform: uppercase;
+        transition: all .3s ease-in;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 1rem;
+
+        &:before{
+            content: "";
+            display: block;
+            margin: 0;
+            width: 0;
+            height: 5px;
+
+            background: linear-gradient(to right, white, $verdeLima);
+            position: absolute;
+            bottom: 0;
+            transition: all .3s;
+        }
+        &:hover:before{
+            width: 100%;
+        }
+    }
+    
+.nav{
+    &:before{
+        left: 50%;
+    }
+    &:hover:before{
+        left: 0;
+           
+    }
+    &:hover{
+        color: rgb(180, 161, 161);
+    }
+}
+
+
+.navegacion-mobile{ 
+
+    img{
+        width: 4rem;
+        filter: invert(90%);
+    }
+
+    @include tablet{
+        display: none;
+    }
+}

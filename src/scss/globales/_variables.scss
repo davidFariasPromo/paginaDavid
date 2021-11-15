@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+$fuente-principal:  'Dosis', sans-serif;
+
+//tamaños de letra
+$normal: 1.5rem;
+$mediana: 2rem;
+$grande: 3.5rem;
+$extra: 4.5rem;
+
+//colores 
+$naranja: #FF6433;
+$purpura: #6C3483;
+$verdeLima: #20633c ;
+$naranjaOscuro: #BA4A00;
+$amarillo: rgb(182, 182, 59);
+
+
+.titulo-head{
+    padding-top: 3rem;
+}

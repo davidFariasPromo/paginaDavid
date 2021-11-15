@@ -1,0 +1,26 @@
+.div-ofrecer{
+    margin: 8rem auto;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .div-imagen{
+        max-width: 10rem;
+        margin: 0 auto;
+    }
+    p, h2{
+        color:rgb(61, 58, 58);
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+}
