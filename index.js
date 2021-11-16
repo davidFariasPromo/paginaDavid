@@ -24,8 +24,8 @@ app.use( (req, res, next) =>{
     return next();
 });
 
-const port = process.env.PORT;
-const host = process.env.HOST;
+const port = process.env.PORT || 8080;
+const host = process.env.HOST || '0.0.0.0';
 
 
 
