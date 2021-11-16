@@ -24,8 +24,8 @@ app.use( (req, res, next) =>{
     return next();
 });
 
-const port = process.env.PORT || 4000;
-const host = process.env.HOST || '0.0.0.0'
+const port = process.env.PORT;
+const host = process.env.HOST;
 
 
 
@@ -38,7 +38,7 @@ app.use(express.static('build'));
 app.use('/', router);
 
 
-app.listen(port,host, ()=>{  
+app.listen(port, host, ()=>{  
     
     console.log('El servidor esta funcionando en el puerto');
 });
