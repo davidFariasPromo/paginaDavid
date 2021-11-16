@@ -12,8 +12,6 @@ db.authenticate()
     .then(() => console.log('Base de datos autenticada'))
     .catch(error => console.log(error));
 
-const port = process.env.PORT || '4000';
-const host = process.env.HOST || '0.0.0.0'
 
 app.use( (req, res, next) =>{
     
@@ -25,6 +23,12 @@ app.use( (req, res, next) =>{
 
     return next();
 });
+
+const port = process.env.PORT || 4000;
+const host = process.env.HOST || '0.0.0.0'
+
+
+
 app.use(express.urlencoded({extended : true}))
 
 app.set('view engine', 'pug');
