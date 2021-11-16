@@ -12,6 +12,8 @@ db.authenticate()
     .then(() => console.log('Base de datos autenticada'))
     .catch(error => console.log(error));
 
+const port = process.env.PORT || 4000;
+const host = process.env.HOST || '0.0.0.0'
 
 app.use( (req, res, next) =>{
     
@@ -23,12 +25,6 @@ app.use( (req, res, next) =>{
 
     return next();
 });
-
-const port = process.env.PORT || 8080;
-const host = process.env.HOST || '0.0.0.0';
-
-
-
 app.use(express.urlencoded({extended : true}))
 
 app.set('view engine', 'pug');
@@ -38,7 +34,7 @@ app.use(express.static('build'));
 app.use('/', router);
 
 
-app.listen(port, host, ()=>{  
+app.listen(port,host, ()=>{  
     
     console.log('El servidor esta funcionando en el puerto');
 });
