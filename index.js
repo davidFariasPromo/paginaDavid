@@ -1,5 +1,5 @@
 
-import express, { router } from 'express';
+import express, { Router } from 'express';
 import db from './config/db.js';
 import router from './routes/index.js';
 import dotenv from 'dotenv';
